@@ -1,4 +1,4 @@
-package BCHUtil
+package go_qrcodejs
 
 const (
 	g15     = 1335
