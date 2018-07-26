@@ -42,7 +42,7 @@ var QRCodeLimitLength = [][]int{
 	{2563, 1989, 1423, 1093},
 	{2699, 2099, 1499, 1139},
 	{2809, 2213, 1579, 1219},
-	{2953, 2331, 1663, 127},
+	{2953, 2331, 1663, 1273},
 }
 
 func typeNumber(text string, errorCorrectLevel QRErrorCorrectLevel) (qrtype int) {
