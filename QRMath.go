@@ -5,6 +5,8 @@ type QRMath struct {
 	LOG_TABLE [256]int
 }
 
+var qrmath *QRMath
+
 func (this *QRMath) Init() {
 	for i := 0; i < 8; i++ {
 		this.EXP_TABLE[i] = 1 << uint(i)
@@ -29,4 +31,11 @@ func (this *QRMath) Gexp(n int) int {
 		n -= 255
 	}
 	return this.EXP_TABLE[n]
+}
+func getMath() *QRMath {
+	if qrmath == nil {
+		qrmath = &QRMath{}
+		qrmath.Init()
+	}
+	return qrmath
 }
