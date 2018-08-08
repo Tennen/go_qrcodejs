@@ -13,7 +13,7 @@ func (this *QR8bitByte) Init(data string) {
 	this.Count = len(this.parsedData)
 }
 
-func (this *QR8bitByte) Write(buffer QRBitBuffer) {
+func (this *QR8bitByte) Write(buffer *QRBitBuffer) {
 	for _, val := range this.parsedData {
 		buffer.PutNumber(uint(val), 8)
 	}
