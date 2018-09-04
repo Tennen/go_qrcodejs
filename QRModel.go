@@ -1,5 +1,7 @@
 package go_qrcodejs
 
+// 在最后都化作乌有
+
 type QRModel struct {
 	TypeNumber        int
 	ErrorCorrectLevel QRErrorCorrectLevel
