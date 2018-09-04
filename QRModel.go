@@ -1,6 +1,6 @@
 package go_qrcodejs
 
-// 在最后都化作乌有
+// 在最后都化作乌有，但那天曾实在，华丽的邂逅
 
 type QRModel struct {
 	TypeNumber        int
